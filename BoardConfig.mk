@@ -4,16 +4,16 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit from sdm845-common
--include device/xiaomi/sdm845-common/BoardConfigCommon.mk
+# Inherit from sm8150-common
+-include device/xiaomi/sm8150-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/xiaomi/perseus
+DEVICE_PATH := device/xiaomi/cepheus
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := perseus
+TARGET_OTA_ASSERT_DEVICE := cepheus
 
 # Kernel
-TARGET_KERNEL_CONFIG := perseus_defconfig
+TARGET_KERNEL_CONFIG := cepheus_defconfig
 
 # Partitions
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
@@ -26,7 +26,7 @@ TARGET_TAP_TO_WAKE_NODE := "/dev/input/event3"
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
 # Inherit from the proprietary version
--include vendor/xiaomi/perseus/BoardConfigVendor.mk
+-include vendor/xiaomi/cepheus/BoardConfigVendor.mk
 
 # Sepolicy
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private

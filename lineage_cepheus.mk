@@ -4,23 +4,23 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-$(call inherit-product, device/xiaomi/perseus/device.mk)
+$(call inherit-product, device/xiaomi/cepheus/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_perseus
-PRODUCT_DEVICE := perseus
+PRODUCT_NAME := lineage_cepheus
+PRODUCT_DEVICE := cepheus
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Mi MIX 3
+PRODUCT_MODEL := Mi 9
 PRODUCT_MANUFACTURER := Xiaomi
 
-BUILD_FINGERPRINT := "Xiaomi/perseus/perseus:9/PKQ1.180729.001/V10.2.1.0.PEECNXM:user/release-keys"
+BUILD_FINGERPRINT := "Xiaomi/cepheus/cepheus:9/PKQ1.181121.001/9.5.30:user/release-keys"
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="perseus-user 9 PKQ1.180729.001 V10.2.1.0.PEECNXM release-keys" \
-    PRODUCT_NAME="perseus" \
-    TARGET_DEVICE="perseus"
+    PRIVATE_BUILD_DESC="cepheus-user 9 PKQ1.181121.001 9.5.30 release-keys" \
+    PRODUCT_NAME="cepheus" \
+    TARGET_DEVICE="cepheus"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi

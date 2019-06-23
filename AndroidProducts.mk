@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_perseus.mk
+    $(LOCAL_DIR)/lineage_cepheus.mk

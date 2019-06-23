@@ -7,7 +7,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/xiaomi/perseus/perseus-vendor.mk)
+$(call inherit-product-if-exists, vendor/xiaomi/cepheus/cepheus-vendor.mk)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2340
@@ -25,8 +25,8 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
-# Inherit from sdm845-common
-$(call inherit-product, device/xiaomi/sdm845-common/sdm845.mk)
+# Inherit from sm8150-common
+$(call inherit-product, device/xiaomi/sm8150-common/sm8150.mk)
 
 # Input
 PRODUCT_COPY_FILES += \

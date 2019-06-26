@@ -12,6 +12,9 @@ DEVICE_PATH := device/xiaomi/cepheus
 # Assert
 TARGET_OTA_ASSERT_DEVICE := cepheus
 
+# HIDL
+DEVICE_FRAMEWORK_MANIFEST_FILE += $(DEVICE_PATH)/framework_manifest.xml
+
 # Kernel
 TARGET_KERNEL_CONFIG := cepheus_defconfig
 

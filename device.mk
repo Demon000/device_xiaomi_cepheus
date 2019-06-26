@@ -28,6 +28,10 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # Inherit from sm8150-common
 $(call inherit-product, device/xiaomi/sm8150-common/sm8150.mk)
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_sm8150
+
 # Input
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl

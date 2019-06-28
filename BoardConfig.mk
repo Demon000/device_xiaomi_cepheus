@@ -27,9 +27,6 @@ TARGET_TAP_TO_WAKE_NODE := "/dev/input/event3"
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
-# HIDL
-DEVICE_FRAMEWORK_MANIFEST_FILE += $(DEVICE_PATH)/framework_manifest.xml
-
 # Inherit from the proprietary version
 -include vendor/xiaomi/perseus/BoardConfigVendor.mk
 

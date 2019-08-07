@@ -12,6 +12,9 @@ DEVICE_PATH := device/xiaomi/cepheus
 # Assert
 TARGET_OTA_ASSERT_DEVICE := cepheus
 
+# Bootloader
+TARGET_BOOTLOADER_BOARD_NAME := cepheus
+
 # Kernel
 TARGET_KERNEL_CONFIG := cepheus_defconfig
 

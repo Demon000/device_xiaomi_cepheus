@@ -1,11 +1,13 @@
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.camera.remosaic.trigeriso=250 \
-    persist.camera.sat.fallback.dist=45 \
-    persist.camera.sat.fallback.dist.d=5 \
-    persist.camera.sat.fallback.luxindex=310 \
+    persist.camera.sat.fallback.dist.d=10 \
+    persist.camera.sat.fallback.dist=40 \
     persist.camera.sat.fallback.lux.d=50 \
-    persist.camera.saf.stablecnt=3
+    persist.camera.sat.fallback.luxindex=360 \
+    persist.vendor.camera.enableNCSService=TRUE \
+    persist.vendor.camera.enableTOFInterface=TRUE \
+    persist.vendor.camera.mfnrframenum=8 \
+    persist.vendor.camera.multicam=TRUE
 
 # Display density
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -13,7 +15,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Display features
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.displayfeature.histogram.enable=false \
-    ro.eyecare.brightness.threshold=7 \
+    ro.displayfeature.histogram.enable=true \
+    ro.eyecare.brightness.threshold=11 \
     ro.eyecare.brightness.level=5 \
-    ro.hist.brightness.threshold=7
+    ro.hist.brightness.threshold=7 \
+    sys.displayfeature.hbm.enable=true \
+    sys.displayfeature_hidl=true

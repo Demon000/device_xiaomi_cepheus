@@ -13,7 +13,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 PRODUCT_NAME := lineage_cepheus
 PRODUCT_DEVICE := cepheus
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Mi 9
+PRODUCT_MODEL := MI 9
 PRODUCT_MANUFACTURER := Xiaomi
 
 BUILD_FINGERPRINT := "Xiaomi/cepheus/cepheus:9/PKQ1.181121.001/9.5.30:user/release-keys"

@@ -25,9 +25,6 @@ TARGET_KERNEL_CONFIG := cepheus_defconfig
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 67108864
 
-# Power
-TARGET_TAP_TO_WAKE_NODE := "/dev/input/event4"
-
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 

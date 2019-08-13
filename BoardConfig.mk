@@ -23,7 +23,6 @@ TARGET_KERNEL_CONFIG := cepheus_defconfig
 
 # Partitions
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
-BOARD_RECOVERYIMAGE_PARTITION_SIZE := 67108864
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/cepheus/BoardConfigVendor.mk

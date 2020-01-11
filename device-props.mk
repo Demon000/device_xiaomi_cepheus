@@ -21,3 +21,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.hist.brightness.threshold=7 \
     sys.displayfeature.hbm.enable=true \
     sys.displayfeature_hidl=true
+
+# Product
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.product.mod_device=cepheus_eea_global

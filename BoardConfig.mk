@@ -15,6 +15,9 @@ TARGET_OTA_ASSERT_DEVICE := cepheus
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := cepheus
 
+# Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+
 # HIDL
 DEVICE_FRAMEWORK_MANIFEST_FILE += $(DEVICE_PATH)/framework_manifest.xml
 
